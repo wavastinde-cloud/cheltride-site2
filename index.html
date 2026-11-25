@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en-CA">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="color-scheme" content="light">
+<title>Cheltride Media — Creative work, clearly scoped</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;700&family=Sora:wght@600;700;800&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">
+<style>
+:root{--sky:#73D0F5;--navy:#1E4C60;--pink:#FCADD8;--lime:#D7F171;--lilac:#EFAEF8;--yellow:#FEFE4B;--ink:#080909;--bg:#FFFFFF;--grey:#F2F2EE;--sage:#C1D0C5;--olive:#3E462F;--muted:#3E462F;
+color-scheme:light;box-sizing:border-box;padding-bottom:env(safe-area-inset-bottom,0px)}
+html{scroll-behavior:smooth}
+*{box-sizing:border-box}
+body{margin:0;font-family:"Plus Jakarta Sans",system-ui,sans-serif;background:var(--bg);color:var(--ink);line-height:1.6;font-size:17px}
+a{color:inherit}
+:focus-visible{outline:3px solid var(--navy);outline-offset:3px}
+.wrap{max-width:1240px;margin:0 auto;padding:0 clamp(18px,4vw,40px)}
+h1,h2,h3{font-family:"Sora",system-ui,sans-serif;line-height:1.1;margin:0 0 .5em;letter-spacing:-.035em}
+h1{font-size:clamp(2.2rem,5.2vw,4.9rem);font-weight:800;line-height:1.06;letter-spacing:-.025em}.ln{display:block}
+h2{font-size:clamp(1.9rem,4vw,3.1rem);font-weight:700}
+h3{font-size:1.3rem;font-weight:700}
+p{margin:0 0 1em;max-width:62ch}
+.sg,.pill,.tag,.nav a{font-family:"Space Grotesk",system-ui,sans-serif}
+.pill{display:inline-block;border:2px solid currentColor;border-radius:999px;padding:.45em 1.3em;font-weight:500;text-decoration:none;font-size:.95rem;cursor:pointer;background:transparent;color:inherit}
+.pill.pk{background:var(--pink);border-color:var(--pink);color:var(--ink)}
+.pill.nv{background:var(--navy);border-color:var(--navy);color:#fff}
+.tag{display:inline-block;background:var(--yellow);color:var(--ink);border-radius:999px;padding:.25em 1em;font-size:.82rem;font-weight:700;margin-bottom:16px}
+.hero{background:var(--sky);position:relative;overflow:hidden;border-radius:0 0 28px 28px;color:var(--ink)}
+.nav{display:flex;align-items:center;justify-content:space-between;gap:16px;flex-wrap:wrap;padding:22px 0 0}
+.nav .logo{font-weight:700;text-decoration:none;display:flex;align-items:center;gap:8px;font-size:1.05rem}
+.logo i{width:18px;height:18px;background:var(--navy);border-radius:50% 50% 50% 0;display:inline-block}
+.nav nav{display:flex;gap:22px;flex-wrap:wrap;font-size:.85rem}
+.nav nav a{text-decoration:none}
+.nav nav a:hover{text-decoration:underline}
+.hero .body{display:grid;grid-template-columns:1.7fr 1fr;gap:clamp(20px,3vw,40px);align-items:start;padding:clamp(28px,4.5vw,56px) 0 clamp(190px,23vw,320px);position:relative;z-index:2}
+.dash{display:inline-block;width:clamp(36px,6vw,90px);height:3px;background:var(--ink);vertical-align:middle;margin-left:14px}
+.mark{display:inline-block;background:var(--lime);border-radius:999px;padding:0 .35em;box-shadow:0 8px 0 var(--pink);color:var(--ink);font-weight:800}
+.side{padding-top:clamp(20px,calc(11.3vw - 55px),150px)}.side p{font-size:.88rem;line-height:1.55;max-width:36ch;margin-bottom:1.2em}.side .pill{font-size:.85rem;padding:.4em 1.1em;margin:0 0 8px 0}
+.side small{display:block;margin-top:12px;font-weight:500;font-size:.78rem}
+@media(max-width:820px){.hero .body{grid-template-columns:1fr;padding-bottom:200px}.sh2{display:none}.side{padding-top:0}.nav nav{order:3;width:100%;gap:14px}}
+.sh{position:absolute;left:0;bottom:44px;width:100%;height:clamp(150px,22vw,300px);z-index:1;pointer-events:none}
+.sh2{position:absolute;right:0;top:78px;width:clamp(110px,12vw,190px);z-index:1;pointer-events:none}
+.strip{position:absolute;left:0;right:0;bottom:0;background:var(--lime);height:44px;overflow:hidden;z-index:3;display:flex;align-items:center;white-space:nowrap}
+.strip div{display:flex;gap:34px;align-items:center;animation:mq 28s linear infinite;font-weight:700;font-size:.9rem;font-family:"Sora",sans-serif}
+.strip i{width:12px;height:12px;border-radius:3px;background:var(--pink);display:inline-block}
+.strip i:nth-of-type(2n){background:var(--sky);border-radius:50%}
+@keyframes mq{to{transform:translateX(-50%)}}
+@media (prefers-reduced-motion:reduce){.strip div{animation:none}html{scroll-behavior:auto}}
+section{padding:clamp(44px,7vw,84px) 0}
+.center{text-align:center;position:relative}
+.center p{margin-left:auto;margin-right:auto}
+.loop{position:absolute;pointer-events:none}
+.head{display:flex;align-items:flex-end;justify-content:space-between;gap:20px;flex-wrap:wrap;margin-bottom:26px}
+.head h2{margin:0;max-width:20ch}
+.stack{display:grid;gap:14px}
+.bar{border-radius:28px;padding:28px 32px;display:grid;grid-template-columns:1fr 1.3fr minmax(120px,200px);gap:12px 28px;align-items:center}
+.bar h3{font-size:1.6rem;color:var(--navy);margin:0 0 .3em}
+.bar p{margin:0;font-size:.95rem}
+.bar a{font-weight:700;display:inline-block;margin-top:.5em}
+.b1{background:var(--lilac)}.b2{background:var(--pink)}.b3{background:var(--lime)}.b4{background:var(--sky)}
+.ill{width:100%;height:auto;display:block;max-width:200px;justify-self:end}
+@media(max-width:820px){.bar{grid-template-columns:1fr}.ill{max-width:170px;justify-self:start;order:-1}}
+.dark{background:var(--ink);color:#fff;border-radius:28px;margin:0 16px;position:relative;overflow:hidden}
+.dark .wrap{position:relative}.dark .tag{background:var(--lime)}
+.dark h2{max-width:18ch}
+.list{display:grid;gap:22px;margin-top:34px}
+.row{display:grid;grid-template-columns:clamp(54px,7vw,76px) 1fr;gap:20px;align-items:start}
+.row .th{width:clamp(54px,7vw,76px);height:clamp(54px,7vw,76px);border-radius:16px;display:grid;place-items:center;font-family:"Space Grotesk",sans-serif;font-weight:700;font-size:1.4rem;color:var(--ink)}
+.row h3{font-size:1.2rem;margin:0 0 .25em}
+.row p{margin:0;color:var(--sage);font-size:.95rem}
+.cols{display:grid;grid-template-columns:1fr 1fr;gap:0 60px}
+@media(max-width:820px){.cols{grid-template-columns:1fr}}
+.grey{background:var(--grey);border-radius:28px;padding:clamp(28px,5vw,56px)}
+@media(max-width:600px){.grey{padding:36px 22px}}
+.cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:16px;margin-top:30px}
+.card{background:#fff;border-radius:18px;padding:26px;position:relative}
+.card .n{font-family:"Sora",sans-serif;font-size:3.6rem;font-weight:600;color:var(--sage);line-height:1;display:block;margin-bottom:.25em}
+.card .ar{position:absolute;right:20px;top:20px;width:34px;height:34px;border-radius:50%;background:var(--lilac);display:grid;place-items:center;color:#fff;font-weight:700}
+.card p{font-size:.95rem;color:var(--muted);margin:0}
+.lime{background:var(--lime);border-radius:28px;padding:clamp(28px,5vw,56px)}
+.lime h2{max-width:16ch}
+.blocks{display:flex;gap:12px;margin-top:26px}
+.blocks b{width:62px;height:62px;border-radius:16px;display:block}
+.two{display:grid;grid-template-columns:1fr 1fr;gap:40px}
+@media(max-width:820px){.two{grid-template-columns:1fr}}
+.sky{background:var(--sky);border-radius:28px;padding:clamp(28px,5vw,56px)}
+details{background:#fff;border-radius:16px;padding:16px 22px;margin-bottom:10px}
+summary{cursor:pointer;font-weight:500;font-family:"Space Grotesk",sans-serif}
+details p{margin:.7em 0 0;color:var(--muted)}
+form{display:grid;gap:14px;max-width:640px}
+label{font-weight:500;font-size:.9rem;display:grid;gap:6px;font-family:"Space Grotesk",sans-serif}
+input,select,textarea{font:inherit;padding:.7em 1em;border-radius:14px;border:2px solid var(--sage);background:#fff;color:var(--ink)}
+.note{font-size:.9rem;color:var(--muted)}
+#ok{display:none;background:var(--lime);padding:16px 20px;border-radius:16px;font-weight:700}
+footer{padding:48px 0 calc(32px + env(safe-area-inset-bottom,0px));background:var(--grey)}
+footer .links{display:flex;flex-wrap:wrap;gap:8px 22px;margin:14px 0 20px;font-size:.92rem}
+.lime,.grey{position:relative;overflow:hidden}.lime>svg{position:absolute;right:0;bottom:0;height:100%;width:auto}.lime>*:not(svg){position:relative}.lime p{max-width:44ch}.grey>svg{position:absolute;right:0;top:0;width:clamp(120px,16vw,220px);height:auto}.grey>*:not(svg){position:relative}
+.deco{margin-top:24px;border-radius:28px;height:clamp(140px,18vw,200px);overflow:hidden}.deco svg{width:100%;height:100%;display:block}
+@media(max-width:820px){.lime>svg{opacity:.35}.grey>svg{display:none}}
+</style>
+</head>
+<body>
+<main id="home">
+<div class="hero">
+<svg class="sh2" viewBox="0 0 360 340" aria-hidden="true"><path fill="#D7F171" d="M220 70A70 70 0 0 1 360 70L334 70A44 44 0 0 0 246 70z"/><path fill-rule="evenodd" fill="#FCADD8" d="M130 140a60 60 0 1 0 120 0a60 60 0 1 0 -120 0zM150 140a40 40 0 1 0 80 0a40 40 0 1 0 -80 0z"/><rect x="60" y="140" width="130" height="16" rx="8" fill="#1E4C60"/><rect x="90" y="118" width="100" height="12" rx="6" fill="#D7F171"/><rect x="108" y="20" width="34" height="34" rx="6" fill="#FFFFFF" transform="rotate(45 125 37)"/></svg>
+<svg class="sh" viewBox="0 0 1200 330" preserveAspectRatio="xMidYMax slice" aria-hidden="true"><path d="M0 330V170a160 160 0 0 1 160 160z" fill="#1E4C60"/><path d="M0 330v-60h20a40 40 0 0 1 40 40v20z" fill="#D7F171"/><path d="M170 330V220a110 110 0 0 1 110 110z" fill="#FCADD8"/><path fill-rule="evenodd" fill="#FFFFFF" d="M276 270a54 54 0 1 0 108 0a54 54 0 1 0 -108 0zM292 270a38 38 0 1 0 76 0a38 38 0 1 0 -76 0z"/><circle cx="360" cy="215" r="22" fill="#FCADD8"/><path d="M430 330l75-130 75 130z" fill="#FFFFFF"/><polygon points="300.0,76.0 306.4,104.6 321.2,98.8 315.4,113.6 344.0,120.0 315.4,126.4 321.2,141.2 306.4,135.4 300.0,164.0 293.6,135.4 278.8,141.2 284.6,126.4 256.0,120.0 284.6,113.6 278.8,98.8 293.6,104.6" fill="#D7F171"/><path d="M620 330V230a100 100 0 0 1 100 100z" fill="#1E4C60"/><path fill="#D7F171" d="M748 330A72 72 0 0 1 892 330L868 330A48 48 0 0 0 772 330z"/><path fill-rule="evenodd" fill="#FCADD8" d="M732 300a28 28 0 1 0 56 0a28 28 0 1 0 -56 0zM744 300a16 16 0 1 0 32 0a16 16 0 1 0 -32 0z"/><polygon points="960.0,208.0 966.1,235.3 979.8,230.2 974.7,243.9 1002.0,250.0 974.7,256.1 979.8,269.8 966.1,264.7 960.0,292.0 953.9,264.7 940.2,269.8 945.3,256.1 918.0,250.0 945.3,243.9 940.2,230.2 953.9,235.3" fill="#FFFFFF"/><path fill-rule="evenodd" fill="#FCADD8" d="M1035 230a95 95 0 1 0 190 0a95 95 0 1 0 -190 0zM1065 230a65 65 0 1 0 130 0a65 65 0 1 0 -130 0z"/><rect x="1030" y="180" width="50" height="50" rx="8" fill="#D7F171" transform="rotate(45 1055 205)"/><rect x="20" y="300" width="150" height="14" rx="7" fill="#FFFFFF"/></svg>
+<div class="wrap">
+<div class="nav"><a class="logo" href="#home"><i></i>Cheltride Media</a>
+<nav aria-label="Main"><a href="#services">Services</a><a href="#process">How We Work</a><a href="#about">About</a><a href="#work">Proof of Process</a><a href="#procurement">Procurement</a><a href="#contact">Contact</a></nav>
+<a class="pill" href="#contact">Discuss a project</a></div>
+<div class="body">
+<h1><span class="ln">Creative work,</span><span class="ln">clearly scoped<span class="dash" aria-hidden="true"></span></span><span class="ln">and thoughtfully</span><span class="ln" style="margin-top:.18em"><span class="mark">delivered</span></span></h1>
+<div class="side"><p>Cheltride Media helps organizations turn a brief into a brand, campaign, digital experience or creative asset. Work directly with founder Trisha Ojijo. Before you commit, you receive the deliverables, price, review points, timing assumptions and payment terms in writing.</p>
+<a class="pill pk" href="#contact">Discuss a project</a> <a class="pill" href="#process" style="margin-left:6px">See how a project works</a>
+<small>British Columbia-based · Working with organizations and independent creators across Canada.</small></div>
+</div></div>
+<div class="strip" aria-hidden="true"><div><span>Cheltride Media</span><i></i><span>Clearly scoped</span><i></i><span>Thoughtfully delivered</span><i></i><span>Cheltride Media</span><i></i><span>Clearly scoped</span><i></i><span>Thoughtfully delivered</span><i></i><span>Cheltride Media</span><i></i><span>Clearly scoped</span><i></i><span>Thoughtfully delivered</span><i></i><span>Cheltride Media</span><i></i><span>Clearly scoped</span><i></i><span>Thoughtfully delivered</span><i></i></div></div>
+</div>
+
+<section><div class="wrap center">
+<svg class="loop" style="left:-10px;top:-20px;width:150px" viewBox="0 0 150 150" aria-hidden="true"><path d="M10 40c30-50 110-20 80 20s-70 30-40 70" fill="none" stroke="#D7F171" stroke-width="16" stroke-linecap="round"/></svg>
+<svg class="loop" style="right:0;bottom:-10px;width:130px" viewBox="0 0 130 130" aria-hidden="true"><path d="M20 100c-20-50 40-90 80-60s-10 60-40 40" fill="none" stroke="#D7F171" stroke-width="16" stroke-linecap="round"/><circle cx="105" cy="105" r="14" fill="#FCADD8"/></svg>
+<span class="tag">A better starting point</span>
+<h2>You do not need a finished brief.</h2>
+<p>Tell us what you are trying to achieve, who the work is for and when it is needed. We will identify the decisions to make before design or production begins. If a separate planning engagement would help, we’ll explain what it includes before you decide.</p>
+<p><strong>One accountable lead. The right specialists for the job.</strong> Trisha leads discovery, scoping, creative direction and client communication. Specialist work may be subcontracted; the proposal names who is responsible for each deliverable, the known costs, and how approved outside costs will be paid.</p>
+</div></section>
+
+<section id="services" style="padding-top:0"><div class="wrap">
+<div class="head"><h2>Creative services, organized around what you need to do</h2><a class="pill pk" href="#contact">Discuss a project</a></div>
+<p>Choose a starting point or describe the problem. The signed scope identifies the work included, review rounds, file formats, exclusions and contributors.</p>
+<div class="stack">
+<div class="bar b1"><div><h3>Brand messaging &amp; identity</h3><p>Make the story, strategy and identity line up.</p></div><div><p>Clarify your positioning, key messages and brand voice. Depending on the project and available expertise, work may also include naming, taglines or a visual identity. Legal trademark clearance and registration are excluded unless explicitly included.</p><a href="#contact">Discuss a brand project</a></div><svg class="ill" viewBox="0 0 190 120"  aria-hidden="true"><rect width="190" height="120" rx="16" fill="#fff"/><circle cx="62" cy="58" r="30" fill="#1E4C60"/><rect x="104" y="34" width="62" height="22" rx="11" fill="#FCADD8"/><rect x="104" y="64" width="44" height="22" rx="11" fill="#73D0F5"/><polygon points="150.0,78.0 152.0,87.1 156.4,85.6 154.9,90.0 164.0,92.0 154.9,94.0 156.4,98.4 152.0,96.9 150.0,106.0 148.0,96.9 143.6,98.4 145.1,94.0 136.0,92.0 145.1,90.0 143.6,85.6 148.0,87.1" fill="#FEFE4B"/><path d="M20 108a24 24 0 0 1 48 0z" fill="#D7F171"/></svg></div>
+<div class="bar b2"><div><h3>Content &amp; campaign creative</h3><p>One campaign idea. A connected set of choices.</p></div><div><p>Set the audience, intended action and message first, then develop website copy, social content, campaign messages and selected promotional assets. Ad spend, media buying, talent, platform management and legal clearance are excluded unless expressly included.</p><a href="#contact">Discuss a campaign</a></div><svg class="ill" viewBox="0 0 190 120"  aria-hidden="true"><rect width="190" height="120" rx="16" fill="#fff"/><path d="M24 96V50a46 46 0 0 1 46 46z" fill="#73D0F5"/><rect x="88" y="26" width="78" height="18" rx="9" fill="#D7F171"/><rect x="88" y="52" width="58" height="18" rx="9" fill="#EFAEF8"/><circle cx="154" cy="90" r="14" fill="#1E4C60"/><polygon points="40.0,18.0 41.7,25.8 45.7,24.3 44.2,28.3 52.0,30.0 44.2,31.7 45.7,35.7 41.7,34.2 40.0,42.0 38.3,34.2 34.3,35.7 35.8,31.7 28.0,30.0 35.8,28.3 34.3,24.3 38.3,25.8" fill="#FEFE4B"/></svg></div>
+<div class="bar b3"><div><h3>Website planning &amp; design</h3><p>Useful design starts with what a person needs to do.</p></div><div><p>Plan website pages, content and user journeys. Where the skills and capacity are available, the project may also include website or graphic design. Hosting, accessibility certification, integrations and ongoing maintenance are not assumed.</p><a href="#contact">Discuss a design project</a></div><svg class="ill" viewBox="0 0 190 120"  aria-hidden="true"><rect width="190" height="120" rx="16" fill="#fff"/><path d="M0 26V16a16 16 0 0 1 16-16h158a16 16 0 0 1 16 16v10z" fill="#1E4C60"/><circle cx="16" cy="13" r="4" fill="#FCADD8"/><circle cx="30" cy="13" r="4" fill="#FEFE4B"/><circle cx="44" cy="13" r="4" fill="#73D0F5"/><rect x="16" y="40" width="70" height="64" rx="12" fill="#EFAEF8"/><circle cx="130" cy="58" r="20" fill="#73D0F5"/><rect x="100" y="86" width="64" height="14" rx="7" fill="#1E4C60"/></svg></div>
+<div class="bar b4"><div><h3>Graphic design &amp; production coordination</h3><p>From approved idea to organized delivery.</p></div><div><p>Create selected graphics and materials such as presentations, posters, social assets or business cards, and coordinate an agreed contributor or supplier for a defined production task. Printing, installation and third-party production are included only when specified.</p><a href="#contact">Discuss production</a></div><svg class="ill" viewBox="0 0 190 120"  aria-hidden="true"><rect width="190" height="120" rx="16" fill="#fff"/><rect x="22" y="22" width="86" height="36" rx="12" fill="#FCADD8"/><rect x="40" y="46" width="86" height="36" rx="12" fill="#D7F171"/><rect x="58" y="70" width="86" height="30" rx="12" fill="#EFAEF8"/><path d="M146 52l22 38h-44z" fill="#1E4C60"/></svg></div>
+</div></div></section>
+
+<section id="process" class="dark"><svg class="loop" style="right:-50px;top:-40px;width:380px;opacity:1" viewBox="0 0 380 300" aria-hidden="true"><path d="M30 220c-40-120 120-190 200-110s-40 170-110 90 40-130 120-140 90 80 40 130" fill="none" stroke="#3E462F" stroke-width="30" stroke-linecap="round" stroke-linejoin="round"/></svg><div class="wrap">
+<span class="tag">How we work</span>
+<h2>A clear process protects the creative work.</h2>
+<p style="color:#C1D0C5">Our process makes decisions and costs visible. The signed scope—not this overview—defines the parties’ obligations.</p>
+<div class="list cols">
+<div class="row"><div class="th" style="background:var(--sky)">01</div><div><h3>Listen and diagnose</h3><p>We discuss the goal, audience, constraints, decision-makers and budget.</p></div></div>
+<div class="row"><div class="th" style="background:var(--pink)">02</div><div><h3>Define the work</h3><p>We document deliverables, exclusions, acceptance criteria, review rounds, timing, contributors, fees, external costs, payment and intellectual-property treatment.</p></div></div>
+<div class="row"><div class="th" style="background:var(--lime)">03</div><div><h3>Confirm and resource</h3><p>Both parties sign. We confirm the schedule, required inputs, contributor availability and any supplier arrangements.</p></div></div>
+<div class="row"><div class="th" style="background:var(--lilac)">04</div><div><h3>Develop and review</h3><p>The authorized client representative sends one consolidated response per review round. A new direction or additional deliverable requires a written change order first.</p></div></div>
+<div class="row"><div class="th" style="background:var(--yellow)">05</div><div><h3>Approve and deliver</h3><p>The client reviews each deliverable against the agreed acceptance criteria. Copyright in eligible final deliverables transfers only after full cleared payment; third-party assets remain subject to their licences.</p></div></div>
+<div class="row"><div class="th" style="background:var(--sky)">06</div><div><h3>Close and learn</h3><p>We reconcile approved outside costs, confirm handoff and ask separately whether the client permits public use of the work. A testimonial is optional.</p></div></div>
+</div>
+<h3 style="margin-top:44px">Client and studio responsibilities</h3>
+<p style="color:#C1D0C5">Cheltride leads communication, records decisions, coordinates agreed contributors and delivers the scope with reasonable care. The client appoints an authorized approver, supplies accurate materials and permissions, consolidates feedback, and obtains its own legal, regulatory, procurement and cultural approvals unless expressly assigned to Cheltride.</p>
+</div></section>
+
+<section id="about"><div class="wrap two">
+<div><span class="tag">About</span><h2>Thoughtful work starts with careful attention.</h2>
+<p>Cheltride Media is a British Columbia-registered creative business founded by Trisha Ojijo in July 2021. Trisha is a third-year nursing student; her studies are part of her story, not a substitute for a marketing credential. She brings careful listening and a documented decision process to each engagement.</p>
+<p>She is the project lead and your point of contact: she records decisions, organizes specialist support where required, and checks work against the agreed scope.</p><div class="deco"><svg viewBox="0 0 400 200" preserveAspectRatio="xMidYMid slice" aria-hidden="true"><rect width="400" height="200" fill="#EFAEF8"/><circle cx="50" cy="180" r="90" fill="#1E4C60"/><rect x="150" y="40" width="120" height="30" rx="15" fill="#FCADD8"/><rect x="190" y="90" width="90" height="30" rx="15" fill="#FFFFFF"/><path fill="#D7F171" d="M270 200A70 70 0 0 1 410 200L384 200A44 44 0 0 0 296 200z"/><polygon points="330.0,30.0 334.4,49.5 344.1,45.9 340.5,55.6 360.0,60.0 340.5,64.4 344.1,74.1 334.4,70.5 330.0,90.0 325.6,70.5 315.9,74.1 319.5,64.4 300.0,60.0 319.5,55.6 315.9,45.9 325.6,49.5" fill="#FEFE4B"/><circle cx="130" cy="150" r="26" fill="#73D0F5"/></svg></div></div>
+<div><h3>Who we work with</h3><p>We welcome projects from small businesses and creators, established organizations, non-profits, public bodies, First Nations communities and Indigenous-led organizations. We assess every project against its scope, requirements and our capacity; an invitation to inquire is not a claim of experience in every sector.</p>
+<h3>Working with communities and public institutions</h3><p>For First Nations and Indigenous-led work, we ask the client who must be involved, what cultural protocols and permissions apply, and whether local expertise should be engaged and paid. We do not claim Indigenous ownership, procurement eligibility, cultural authority or to replace a public body’s legal responsibilities.</p></div>
+</div></section>
+
+<section id="work" style="padding-top:0"><div class="wrap"><div class="grey"><svg viewBox="0 0 220 220"  aria-hidden="true"><path d="M220 0v110a110 110 0 0 1 -110 -110z" fill="#FCADD8"/><path fill-rule="evenodd" fill="#73D0F5" d="M130 150a40 40 0 1 0 80 0a40 40 0 1 0 -80 0zM148 150a22 22 0 1 0 44 0a22 22 0 1 0 -44 0z"/><polygon points="60.0,34.0 63.8,50.9 72.0,48.0 69.1,56.2 86.0,60.0 69.1,63.8 72.0,72.0 63.8,69.1 60.0,86.0 56.2,69.1 48.0,72.0 50.9,63.8 34.0,60.0 50.9,56.2 48.0,48.0 56.2,50.9" fill="#EFAEF8"/></svg>
+<span class="tag">Work in progress</span>
+<h2 style="max-width:18ch">A transparent look at how we think</h2>
+<p><strong>Independent process demonstration — not commissioned client work.</strong></p>
+<div class="cards">
+<div class="card"><span class="ar">↗</span><span class="n">01</span><h3>Starting request</h3><p>“We need a better website.”</p></div>
+<div class="card"><span class="ar">↗</span><span class="n">02</span><h3>Questions we ask</h3><p>Who needs to use it? What action should they take? Which pages and content exist? Who approves? What accessibility, platform, budget and procurement constraints apply?</p></div>
+<div class="card"><span class="ar">↗</span><span class="n">03</span><h3>Working decision and output</h3><p>Define the information architecture and primary action before committing to design or development. Illustrative output: a five-page sitemap, one-page message hierarchy, client-input list, approval schedule and proposed acceptance checklist. Development, hosting, photography, ongoing maintenance and legal review are excluded unless separately agreed.</p></div>
+</div>
+<p class="note" style="margin-top:20px">This shows a method for scoping an uncertain request—not evidence of an actual client result.</p>
+</div></div></section>
+
+<section style="padding-top:0"><div class="wrap"><div class="lime"><svg viewBox="0 0 340 300" preserveAspectRatio="xMaxYMax meet" aria-hidden="true"><path d="M0 300V190a110 110 0 0 1 110 110z" fill="#1E4C60"/><circle cx="180" cy="70" r="60" fill="#FCADD8"/><polygon points="260.0,186.0 266.4,214.6 281.2,208.8 275.4,223.6 304.0,230.0 275.4,236.4 281.2,251.2 266.4,245.4 260.0,274.0 253.6,245.4 238.8,251.2 244.6,236.4 216.0,230.0 244.6,223.6 238.8,208.8 253.6,214.6" fill="#FEFE4B"/><rect x="230" y="40" width="90" height="22" rx="11" fill="#73D0F5"/><path fill="#EFAEF8" d="M240 300A60 60 0 0 1 360 300L336 300A36 36 0 0 0 264 300z"/></svg>
+<h2>No inflated claims. A visible way of working.</h2>
+<p>Our public portfolio is in development. We do not present independent concepts as commissioned work or invent testimonials. The walkthrough above lets you assess our method before you commit.</p>
+<div class="blocks" aria-hidden="true"><b style="background:var(--pink)"></b><b style="background:var(--yellow)"></b><b style="background:var(--sky)"></b></div>
+</div></div></section>
+
+<section id="projects" style="padding-top:0"><div class="wrap two">
+<div><h2>A proposal built around your project</h2><p>Tell us what you need, your timeline and any budget or procurement requirements. After confirming capacity, we’ll provide a written proposal for the work we can take on, setting out the scope, fee, applicable taxes, known external costs and any agreed allowances. A project begins after the scope is signed and required inputs and resources are confirmed.</p>
+<h3>How payment works</h3><p>Fees and payment terms are agreed in the proposal, not published as standard rates. Our proposed starting point is to invoice after the agreed work is delivered, with the due date stated in your agreement; both parties may agree different terms in writing.</p>
+<p>If external suppliers are involved, the proposal explains their costs and whether Cheltride or you will contract with them. Supplier terms are confirmed before any commitment, and supplier payments do not automatically follow the client’s payment schedule.</p></div>
+<div style="background:var(--grey);border-radius:28px;padding:32px"><h3>Common questions</h3>
+<details><summary>Will I know the cost before agreeing?</summary><p>Yes. Your proposal identifies the fee, applicable taxes and known external costs. Any amount not yet known is identified with its basis or an agreed cap before authorization.</p></details>
+<details><summary>What happens if the scope changes?</summary><p>We explain the change to the work, fee and schedule in writing. Changed work starts only after both parties approve it.</p></details>
+<details><summary>What if the project is cancelled?</summary><p>The agreement explains how completed work and approved, non-cancellable costs are reconciled. Any applicable refund or remaining amount due is calculated under the signed terms.</p></details></div>
+</div></section>
+
+<section id="procurement" style="padding-top:0"><div class="wrap"><div class="sky two">
+<div><h2>Vendor information for procurement teams</h2><p>Cheltride Media is a founder-led creative business registered in British Columbia in July 2021 (BC Registry FM0852900). Registration is not proof of insurance, clearance, accessibility conformance, Indigenous status, past performance or vendor qualification.</p></div>
+<div><p>Please provide the solicitation, contracting entity, mandatory insurance, accessibility, privacy, security, subcontracting, purchase-order, payment, invoice and acceptance requirements before we quote. We will confirm each as met, not held, needing clarification or not feasible, and whether the project is workable. We will not ask you to bypass your process.</p><a class="pill nv" href="mailto:hello@cheltride.com?subject=Capability%20statement%20request">Request a capability statement</a></div>
+</div></div></section>
+
+<section id="contact" style="padding-top:0"><div class="wrap two">
+<div><h2>Tell us what needs to happen next.</h2><p>Share the goal, timing, decision-maker and any procurement requirements. We will tell you whether the project is a fit and propose a next step.</p>
+<p class="note"><strong>Please do not send</strong> health records, financial-account information, confidential procurement files or restricted cultural information through this form.</p>
+<p>Or email <a href="mailto:hello@cheltride.com">hello@cheltride.com</a></p><div class="deco"><svg viewBox="0 0 400 200" preserveAspectRatio="xMidYMid slice" aria-hidden="true"><rect width="400" height="200" fill="#FCADD8"/><path d="M0 200V90a110 110 0 0 1 110 110z" fill="#73D0F5"/><path d="M150 200l60-110 60 110z" fill="#FFFFFF"/><path fill-rule="evenodd" fill="#EFAEF8" d="M280 70a60 60 0 1 0 120 0a60 60 0 1 0 -120 0zM304 70a36 36 0 1 0 72 0a36 36 0 1 0 -72 0z"/><rect x="40" y="30" width="110" height="16" rx="8" fill="#1E4C60"/><polygon points="320.0,134.0 323.8,150.9 332.0,148.0 329.1,156.2 346.0,160.0 329.1,163.8 332.0,172.0 323.8,169.1 320.0,186.0 316.2,169.1 308.0,172.0 310.9,163.8 294.0,160.0 310.9,156.2 308.0,148.0 316.2,150.9" fill="#FEFE4B"/></svg></div></div>
+<div>
+<form id="f" novalidate>
+<label>Name *<input name="name" required autocomplete="name"></label>
+<label>Email *<input name="email" type="email" required autocomplete="email"></label>
+<label>Organization or project<input name="org"></label>
+<label>Project goal *<textarea name="goal" rows="4" required></textarea></label>
+<label>Service of interest<select name="svc"><option value="">Select (optional)</option><option>Brand messaging &amp; identity</option><option>Content &amp; campaign creative</option><option>Website planning &amp; design</option><option>Graphic design &amp; production coordination</option></select></label>
+<label>Timing<input name="timing"></label>
+<label>Budget<input name="budget"></label>
+<label>Procurement/payment requirements<textarea name="proc" rows="2"></textarea></label>
+<p class="note">We use this information to respond to your inquiry and discuss a possible project. See our Privacy Policy. Submitting this form does not subscribe you to marketing email.</p>
+<button class="pill pk" type="submit">Send inquiry</button>
+<div id="ok" role="status">Thank you. Your inquiry has been received.</div>
+</form></div>
+</div></section>
+</main>
+
+<footer><div class="wrap">
+<a class="logo sg" href="#home" style="display:inline-flex;align-items:center;gap:8px;font-weight:700;text-decoration:none"><i style="width:18px;height:18px;background:var(--navy);border-radius:50% 50% 50% 0;display:inline-block"></i>Cheltride Media</a> · British Columbia, Canada · <a href="mailto:hello@cheltride.com">hello@cheltride.com</a>
+<div class="links"><a href="#services">Services</a><a href="#process">How We Work</a><a href="#about">About</a><a href="#work">Proof of Process</a><a href="#procurement">Procurement</a><a href="#projects">Projects &amp; Payment</a><a href="#home">Privacy</a><a href="#home">Website Terms</a><a href="#home">Cookies &amp; Email</a><a href="#home">Accessibility</a></div>
+<small>© 2026 Cheltride Media. All rights reserved.</small>
+</div></footer>
+<script>
+document.getElementById('f').addEventListener('submit',function(e){
+e.preventDefault();var f=e.target;
+if(!f.name.value.trim()||!f.email.value.trim()||!f.goal.value.trim()){f.reportValidity&&f.reportValidity();return;}
+document.getElementById('ok').style.display='block';
+});
+</script>
+</body>
+</html>
